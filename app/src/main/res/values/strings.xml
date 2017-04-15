@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SiJinSiXin</string>
+    <string name="title_home">首页</string>
+    <string name="title_test">试题</string>
+    <string name="title_news">新闻</string>
+    <string name="tv_basic">基础知识</string>
+    <string name="tv_party_history">党的历史</string>
+    <string name="liangxueyizuo">两学一做</string>
+    <string name="tradtion">传统文化</string>
+    <string name="title_activity_test">testActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="btn_start_test">开始答题</string>
+    <string name="tv_test_introduction">共有50道题目，满分100，加油！</string>
+    <string name="btn_test_go">开始答题</string>
+</resources>
