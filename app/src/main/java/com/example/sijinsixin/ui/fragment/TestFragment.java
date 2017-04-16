@@ -101,7 +101,7 @@ public class TestFragment extends Fragment {
                             , Context.MODE_PRIVATE);
                     grade = pref.getInt("grade", 0);
                     Log.i(TAG, "onCheckedChanged: "+ grade);
-                    grade = grade + 2;
+                    grade = grade + 1;
                     Log.i(TAG, "onCheckedChanged: " + grade);
                     SharedPreferences.Editor editor = getContext().getSharedPreferences("data",
                             Context.MODE_PRIVATE).edit();
@@ -137,8 +137,8 @@ public class TestFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.backup:
-                return true;
+//            case R.id.backup:
+//                return true;
             case R.id.exit:
                 Intent intent = new Intent(getContext(), GradeActivity.class);
                 startActivity(intent);

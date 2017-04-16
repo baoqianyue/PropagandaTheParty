@@ -130,8 +130,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.img_liangxueyizuo:
                 Intent intent2 = new Intent(getContext(), HomeContentActivity.class);
-                intent2.putExtra("targetUrl", "http://baike.baidu.com/item/%E5%9B%9B%E8%BF%9B" +
-                        "%E5%9B%9B%E4%BF%A1?sefr=cr");
+                intent2.putExtra("targetUrl", "http://baike.baidu.com/item/%E2%80%9C%E4%B8%A4" +
+                        "%E5%AD%A6%E4%B8%80%E5%81%9A%E2%80%9D%E5%AD%A6%E4%B9%A0%E6%95%99%E8" +
+                        "%82%B2?fromtitle=%E4%B8%A4%E5%AD%A6%E4%B8%80%E5%81%" +
+                        "9A&fromid=19422481&type=syn&sefr=cr");
                 startActivity(intent2);
                 break;
             case R.id.img_tradtion:

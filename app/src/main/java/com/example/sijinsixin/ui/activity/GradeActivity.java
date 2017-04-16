@@ -18,6 +18,6 @@ public class GradeActivity extends AppCompatActivity {
         mTextView = (TextView) findViewById(R.id.tv_grade);
         SharedPreferences sp = getSharedPreferences("data", MODE_PRIVATE);
         int grade = sp.getInt("grade", 0);
-        mTextView.setText(grade+"");
+        mTextView.setText("测试结束，你一共作对了" + grade + "题！");
     }
 }

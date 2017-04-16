@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
+              android:layout_height="900dp"
+              android:background="@drawable/teststart"
               android:orientation="vertical">
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="200dp"/>
+        android:layout_height="300dp"/>
+
 
     <TextView
         android:id="@+id/tv_test_introduction"
@@ -15,15 +17,15 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/tv_test_introduction"
-        android:textSize="30dp"/>
+        android:textSize="38dp"/>
 
     <Button
         android:id="@+id/btn_test_go"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:background="@color/colorAccent"
-        android:text="@string/btn_test_go"
+        android:background="@drawable/teststartbutton"
         android:textSize="20dp"/>
 
 </LinearLayout>
