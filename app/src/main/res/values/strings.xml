@@ -11,6 +11,9 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="btn_start_test">开始答题</string>
-    <string name="tv_test_introduction">共有50道题目，满分100，加油！</string>
+    <string name="tv_test_introduction">共有50道题目，满分100，左右滑动翻页，加油！</string>
     <string name="btn_test_go">开始答题</string>
+    <string name="btn_test_exit">现在退出</string>
+    <string name="ic_backup">返回</string>
+    <string name="ic_exit">提交</string>
 </resources>

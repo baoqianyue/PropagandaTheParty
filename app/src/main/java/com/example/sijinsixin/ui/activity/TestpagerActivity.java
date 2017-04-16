@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 
 import com.example.sijinsixin.R;
 import com.example.sijinsixin.bean.Bean;
@@ -22,7 +22,7 @@ import java.util.UUID;
  * Created by 鲍骞月 on 2017/4/15.
  */
 
-public class TestpagerActivity extends FragmentActivity {
+public class TestpagerActivity extends AppCompatActivity {
 
     public static final String BEAN_ID = "bean_id";
     private static final String TAG = "TestpagerActivity";
@@ -55,7 +55,7 @@ public class TestpagerActivity extends FragmentActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_pager);
-        UUID beanId = (UUID) getIntent().getSerializableExtra(BEAN_ID);
+        final UUID beanId = (UUID) getIntent().getSerializableExtra(BEAN_ID);
 //        *//*if (null == beanId)
 //            Log.i(TAG, "onCreate: beanid is null");*//*
 //        Log.i(TAG, beanId.toString());
@@ -63,7 +63,19 @@ public class TestpagerActivity extends FragmentActivity {
 
         mBeans = BeanLab.get(this).getBeans();
         FragmentManager fragmentManager = getSupportFragmentManager();
-        mViewPager.setAdapter(new FragmentStatePagerAdapter(fragmentManager) {
+//        mViewPager.setAdapter(new FragmentStatePagerAdapter(fragmentManager) {
+//            @Override
+//            public Fragment getItem(int position) {
+//                Bean bean = mBeans.get(position);
+//                return TestFragment.newInstance(bean.getId());
+//            }
+//
+//            @Override
+//            public int getCount() {
+//                return mBeans.size();
+//            }
+//        });
+        mViewPager.setAdapter(new FragmentPagerAdapter(fragmentManager) {
             @Override
             public Fragment getItem(int position) {
                 Bean bean = mBeans.get(position);

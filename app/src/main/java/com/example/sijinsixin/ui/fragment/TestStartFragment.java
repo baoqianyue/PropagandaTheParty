@@ -1,6 +1,8 @@
 package com.example.sijinsixin.ui.fragment;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -43,6 +45,14 @@ public class TestStartFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        /**
+         * 使用SharedPreferences存储分数
+         */
+        SharedPreferences.Editor editor = getContext().getSharedPreferences("data",
+                Context.MODE_PRIVATE).edit();
+        editor.putInt("grade", 0);
+        editor.apply();
         return v;
     }
 }
