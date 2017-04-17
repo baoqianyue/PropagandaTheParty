@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.sijinsixin.App;
 import com.example.sijinsixin.R;
@@ -48,6 +49,7 @@ public class TestFragment extends Fragment {
     private String B;
     private String C;
     private String D;
+    private Bean currentBean;
 
 
     public static TestFragment newInstance(UUID beanId) {
@@ -92,6 +94,7 @@ public class TestFragment extends Fragment {
         rbC.setText(mBean.getC());
         rbD.setText(mBean.getD());
         isRbVisibility();
+        setCommitToast();
         mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
@@ -100,7 +103,7 @@ public class TestFragment extends Fragment {
                     SharedPreferences pref = getContext().getSharedPreferences("data"
                             , Context.MODE_PRIVATE);
                     grade = pref.getInt("grade", 0);
-                    Log.i(TAG, "onCheckedChanged: "+ grade);
+                    Log.i(TAG, "onCheckedChanged: " + grade);
                     grade = grade + 1;
                     Log.i(TAG, "onCheckedChanged: " + grade);
                     SharedPreferences.Editor editor = getContext().getSharedPreferences("data",
@@ -119,6 +122,12 @@ public class TestFragment extends Fragment {
 
         return v;
 
+    }
+
+    private void setCommitToast() {
+        if (mBean.equals(BeanLab.get(getContext()).getBeans().get(29)))
+            Toast.makeText(getContext(), "现在可以点击右上角的提交按钮查看成绩", Toast
+                    .LENGTH_LONG).show();
     }
 
 
