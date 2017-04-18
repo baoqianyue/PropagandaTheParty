@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/wuxingif"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/wuxinghongqi"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"></FrameLayout>
+
+
+    <Button
+        android:id="@+id/yuandangwei"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="39dp"
+        android:layout_below="@+id/wuxingif"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/yuantuanwei"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="32dp"
+        android:layout_above="@+id/androidlab"
+        android:layout_toStartOf="@+id/androidlab"/>
+
+    <Button
+        android:id="@+id/androidlab"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

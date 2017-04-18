@@ -17,4 +17,6 @@
     <string name="btn_test_exit">现在退出</string>
     <string name="ic_backup">返回</string>
     <string name="ic_exit">提交</string>
+    <string name="ic_about_main">关于</string>
+    <string name="allcount">30</string>
 </resources>

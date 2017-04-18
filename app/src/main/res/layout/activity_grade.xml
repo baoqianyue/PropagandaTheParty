@@ -1,20 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradebg"
+    android:orientation="vertical"
     tools:context="com.example.sijinsixin.ui.activity.GradeActivity">
 
+
     <TextView
-        android:id="@+id/tv_grade"
-        android:layout_width="match_parent"
+        android:id="@+id/allcount"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textColor="@color/colorAccent"
-        android:textSize="50sp"
-        tools:text="hhhh"/>
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="213dp"
+        android:text="@string/allcount"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/truecount"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="30sp"
+        android:layout_below="@+id/allcount"
+        android:layout_alignStart="@+id/allcount"/>
+
+    <TextView
+        android:id="@+id/falsecount"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:textSize="30sp"
+        android:layout_below="@+id/truecount"
+        android:layout_alignStart="@+id/truecount"/>
+    <Button
+        android:background="@drawable/icbackup"
+        android:id="@+id/btn_back_up"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/falsecount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="193dp"/>
 
 
-</LinearLayout>
+</RelativeLayout>

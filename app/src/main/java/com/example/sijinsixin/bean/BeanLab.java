@@ -194,7 +194,7 @@ public class BeanLab {
         bean20.setAnswer(bean20.getA());
         mBeans.add(bean20);
         Bean bean21 = new Bean();
-        bean21.setTitle("21、党章体现党的集体利益和意志，具有最大的（B）");
+        bean21.setTitle("21、党章体现党的集体利益和意志，具有最大的（）");
         bean21.setA("A.指导性");
         bean21.setB("B.权威性");
         bean21.setC("C.先进性");

@@ -11,6 +11,7 @@ import android.view.ViewParent;
 import android.widget.FrameLayout;
 
 import com.example.sijinsixin.R;
+import com.example.sijinsixin.ui.fragment.AboutFragment;
 import com.example.sijinsixin.ui.fragment.HomeFragment;
 import com.example.sijinsixin.ui.fragment.TestStartFragment;
 
@@ -57,6 +58,7 @@ public class MainActivity extends SingleFragmentActivity implements
                 switchFragment(TestStartFragment.newInstance());
                 break;
             case R.id.navigation_notifications:
+                switchFragment(AboutFragment.newInstance());
                 break;
         }
         return true;
@@ -103,4 +105,8 @@ public class MainActivity extends SingleFragmentActivity implements
         }
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
 }

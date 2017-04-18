@@ -127,7 +127,7 @@ public class TestFragment extends Fragment {
     private void setCommitToast() {
         if (mBean.equals(BeanLab.get(getContext()).getBeans().get(29)))
             Toast.makeText(getContext(), "现在可以点击右上角的提交按钮查看成绩", Toast
-                    .LENGTH_LONG).show();
+                    .LENGTH_SHORT).show();
     }
 
 
