@@ -23,6 +23,7 @@ public class HomeContentActivity extends SingleFragmentActivity{
         return new HomeContentFragment(mURL);
     }
 
+
     @Override
     public int getLayoutResId() {
         return R.layout.fragment_web_content;

@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.example.sijinsixin.R;
 
@@ -15,9 +14,9 @@ import com.example.sijinsixin.R;
  */
 
 public class AboutFragment extends Fragment {
-    private Button btnYuandangwei;
-    private Button btnYuantuanwei;
-    private Button btnAndroidLab;
+//    private Button btnYuandangwei;
+//    private Button btnYuantuanwei;
+//    private Button btnAndroidLab;
 
     public static Fragment newInstance() {
         return new AboutFragment();
@@ -29,9 +28,9 @@ public class AboutFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable
             ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_about, container, false);
-        btnYuandangwei = (Button) view.findViewById(R.id.yuandangwei);
-        btnYuantuanwei = (Button) view.findViewById(R.id.yuantuanwei);
-        btnAndroidLab = (Button) view.findViewById(R.id.androidlab);
+//        btnYuandangwei = (Button) view.findViewById(R.id.yuandangwei);
+//        btnYuantuanwei = (Button) view.findViewById(R.id.yuantuanwei);
+//        btnAndroidLab = (Button) view.findViewById(R.id.androidlab);
         return view;
     }
 }

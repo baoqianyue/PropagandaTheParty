@@ -6,14 +6,9 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:buttonStyle">@style/BeatBoxButtn</item>
     </style>
 
-        <style name="BeatBoxButtn"
-               parent="android:style/Widget.Holo.Button">
 
-            <item name="android:background">@drawable/button_beat_box</item>
-        </style>
 
 
     <!--闪屏页-->
@@ -21,7 +16,6 @@
         <item name="android:windowBackground">@drawable/splashactivity</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
-        <item name="android:buttonStyle">@style/BeatBoxButtn</item>
     </style>
 
 
